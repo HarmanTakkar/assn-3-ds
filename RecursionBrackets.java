@@ -1,39 +1,18 @@
 import java.util.*;
-
-
-
 public class RecursionBrackets
-
 {
-
 	private static Scanner sc = new Scanner(System.in);
-
 	private static String open = "({[<";
-
 	private static String close = ")}]>";
-
-	
-
 	public static boolean checkbrackets(String str , int beg, int end)
-
 	{
-
-		
-
 		if (beg > end) 
-
 			return true;
-
 		if (end == 1 || close.contains(Character.toString(str.charAt(0)))) 
-
 			return false;
-
 		String brac = Character.toString(str.charAt(beg)); 
 
-		
-
 		if (open.contains(brac)) 
-
 		{  
 
 			int check = open.indexOf(brac); 
