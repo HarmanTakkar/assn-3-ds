@@ -13,7 +13,8 @@ public class RecursionSum
   {
     Scanner sc=new Scanner(System.in);
     System.out.print("ENTER NUMBER AS STRING: ");
-    int num=sc.nextInt();
+    String a=sc.next();
+    int num = Integer.parseInt(a);
     int s=sumOfDigit(num);
     System.out.println("Sum = "+s);
   }
